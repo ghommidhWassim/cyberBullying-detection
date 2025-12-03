@@ -28,14 +28,25 @@ The application is exposed via a **FastAPI REST API** and **containerized with D
 git clone https://github.com/your-username/cyberbullying-detection.git
 cd cyberbullying-detection
 ```
+2.Project Structure (make sure all files exists in the same folder
+```bash
+├─ appcyberBullying.py        # FastAPI application
+├─ cyberbullying.ipynb         # Notebook for full pipeline
+├─ model_label_lr.pkl          # Stage 1: Label prediction model
+├─ model_type_lr.pkl           # Stage 2: Type prediction model
+├─ types_le.pkl                # LabelEncoder for bullying types
+├─ requirements.txt            # Python dependencies
+├─ docker-compose.yml          # Docker configuration
+├─ Dockerfile                  # FastAPI Docker image setup
+```
 
-2. **Ensure Docker and Docker Compose are installed**
-3. **Build and start the containers**
+3. **Ensure Docker and Docker Compose are installed**
+4. **Build and start the containers**
 ```bash
 docker-compose up --build
 ```
-4. FastAPI server will run at **http://localhost:8000**
-5. API docs available at **http://localhost:8000/docs**
+5. FastAPI server will run at **http://localhost:8000**
+6. API docs available at **http://localhost:8000/docs**
    
 ## Usage
 Predict Cyberbullying
