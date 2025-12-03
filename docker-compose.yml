@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  fastapi:
+    build: .
+    container_name: cyberbullying-api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/app   # optional, for hot reload during development
+
+  mongodb:
+    image: mongo:6.0
+    container_name: cyberbullying-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
+
