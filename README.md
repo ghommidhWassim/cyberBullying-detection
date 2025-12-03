@@ -25,8 +25,8 @@ The application is exposed via a **FastAPI REST API** and **containerized with D
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/cyberbullying-detection.git
-cd cyberbullying-detection
+git clone https://github.com/ghommidhWassim/cyberBullying-detection.git
+cd cyberBullying-detection
 ```
 2.Project Structure (make sure all files exists in the same folder)
 ```bash
