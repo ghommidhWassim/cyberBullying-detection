@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+scikit-learn
+pandas
+joblib
+requests
+matplotlib
+seaborn
+pymongo
