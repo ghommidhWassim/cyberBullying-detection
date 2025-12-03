@@ -28,7 +28,7 @@ The application is exposed via a **FastAPI REST API** and **containerized with D
 git clone https://github.com/your-username/cyberbullying-detection.git
 cd cyberbullying-detection
 ```
-2.Project Structure (make sure all files exists in the same folder
+2.Project Structure (make sure all files exists in the same folder)
 ```bash
 ├─ appcyberBullying.py        # FastAPI application
 ├─ cyberbullying.ipynb         # Notebook for full pipeline
